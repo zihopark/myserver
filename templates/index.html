@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>죠의 웹페이지</h1>
+        <div class="form-container">
+            <form action="/add" method="get">
+                <input type="text" name="num1" placeholder="첫 번째 숫자">
+                <input type="text" name="num2" placeholder="두 번째 숫자">
+                <input type="submit" value="전송">
+            </form>
+            <br><br>
+            <form action="/label" method="post" enctype="multipart/form-data">
+                <input type="file" name="label">
+                <input type="submit" value="이미지 전송">
+            </form>
+            <br><br>
+            <form action="/compare" method="post" enctype="multipart/form-data">
+                <input type="file" name="face1">
+                <input type="file" name="face2">
+                <input type="submit" value="얼굴 비교 시작">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
